@@ -1,0 +1,345 @@
+/* General Reset */
+@font-face {
+  font-family: "Flame";
+  src: url("fonts/FlameRegular.OTF") format("opentype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "gg-sans-SemiBold";
+  src: url("fonts/gg-sans-SemiBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: "Flame", sans-serif;
+  color: #ffffff;
+  background-color: #000000; /* Dark background */
+  line-height: 1.2;
+}
+
+/* Header Styling */
+header {
+  background-color: #000;
+  padding: 10px 20px;
+  position: fixed; /* Fixed position */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Ensure it stays on top of other content */
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* Burger Menu */
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.burger-menu .line {
+  width: 30px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 5px 0;
+  border-radius: 30px;
+}
+
+/* Navigation Links */
+/* Burger Menu Specific */
+/* Burger Menu Specific */
+#nav-links {
+  display: none; /* Hidden by default */
+  list-style: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+}
+
+#nav-links.active {
+  display: flex; /* Shown when burger menu is clicked */
+  flex-direction: column;
+  align-items: center; /* Center the links horizontally */
+  justify-content: center; /* Optional: center links vertically */
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: #000;
+  width: 100%;
+  padding-bottom: 30px; /* Add space at the bottom */
+  z-index: 1000;
+}
+
+#nav-links li {
+  margin: 10px 0; /* Add space between links */
+}
+
+#nav-links li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "Flame", sans-serif;
+  font-size: 1.2rem;
+}
+
+#nav-links li a:hover {
+  color: #f28c38; /* Highlight color */
+}
+
+/* Burger Menu Specific */
+#nav-links {
+  display: none; /* Hidden by default */
+}
+
+#nav-links.active {
+  display: flex; /* Shown when burger menu is clicked */
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  background-color: #000;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Hide burger menu on larger screens */
+@media (min-width: 768px) {
+  .burger-menu {
+    display: none; /* Hide burger menu */
+  }
+
+  #nav-links {
+    display: flex; /* Show navigation links as flex */
+    flex-direction: row;
+    gap: 20px;
+    position: static; /* Reset position */
+    background: none;
+  }
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 500px;
+  background: url("./Images/banner-pizza-homepage_.webp") no-repeat center
+    center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  padding: 20px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: normal;
+  margin-bottom: 10px;
+  font-family: "Flame", sans-serif;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  font-family: "gg-sans-SemiBold", sans-serif;
+}
+
+.cta-button {
+  background-color: #f28c38;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #d9772c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #nav-links {
+    display: none; /* Hide navbar links on smaller screens */
+  }
+
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+}
+/* Cards Section */
+.cards-section {
+  padding: 40px 20px;
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+}
+
+.section-title {
+  font-family: "Flame", sans-serif;
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.section-sub-title {
+  font-family: "gg-sans-SemiBold", sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/* Container for Horizontal Scrolling */
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  overflow-x: auto; /* Horizontal scroll for smaller screens */
+  gap: 20px;
+  padding: 10px; /* Adds padding around the container */
+}
+
+.cards-container::-webkit-scrollbar {
+  display: none; /* Hide scrollbar */
+}
+
+/* Individual Card Styling */
+.card {
+  min-width: 300px; /* Ensure consistent card width */
+  max-width: 300px;
+  height: 300px; /* Fixed card height */
+  scroll-snap-align: start; /* Snap each card cleanly */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.3s ease;
+}
+
+/* Card Image */
+.card-image {
+  border-radius: 5px;
+  width: 100%;
+  height: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover; /* Crop image to fit */
+}
+
+/* Card Content */
+.card-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between; /* To align name and rating horizontally */
+  align-items: center;
+}
+
+.card-title {
+  font-family: "Flame", sans-serif;
+  font-size: 26px;
+  color: #fff;
+}
+
+.card-rating {
+  font-size: 1.1rem;
+  color: #f28c38; /* Star color */
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.card-footer {
+  display: flex; /* Makes the container a flexbox */
+  justify-content: space-between; /* Keeps the elements on the same line with space */
+  align-items: center; /* Aligns items vertically in the center */
+}
+
+.card-location {
+  font-family: "gg-sans-SemiBold", sans-serif;
+  font-size: 22px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.card-location i {
+  display: inline-block;
+  width: 16px;
+  height: 20px;
+  background-image: url("Images/Location-icon.webp");
+  background-size: contain;
+}
+
+/* Heart button */
+.heart-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  align-self: flex-end;
+  margin-top: auto;
+}
+
+.heart-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("Images/heart-outline.webp");
+  background-size: cover;
+  transition: background-image 0.3s ease;
+}
+
+.heart-btn.liked .heart-icon {
+  background-image: url("Images/heart-filled.webp");
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .cards-container {
+    justify-content: start;
+    gap: 10px; /* Reduce spacing for smaller screens */
+  }
+
+  .card {
+    min-width: 260px; /* Slightly smaller cards on mobile */
+    max-width: 260px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  /* Media Query for Desktop */
+  @media (min-width: 1024px) {
+    .cards-container {
+      justify-content: center; /* Center the cards on desktop screens */
+      overflow-x: visible; /* Remove horizontal scroll */
+      flex-wrap: wrap; /* Allow cards to wrap if needed */
+    }
+  }
+}

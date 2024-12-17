@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sapori Nascosti</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta
+      name="description"
+      content="Discover hidden Italian gems across Aarhus and have a taste of authentic Italian cuisine"
+    />
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY"
+      defer
+    ></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <nav class="navigation">
+        <div class="logo">
+          <a href="index.html">
+            <img src="./Images/Logo-mobile.webp" alt="Sapori Nascosti Logo" />
+          </a>
+        </div>
+        <div class="burger-menu" id="burger-menu">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ul id="nav-links">
+          <li><a href="#" class="link">Map</a></li>
+          <li><a href="#" class="link">Events</a></li>
+          <li><a href="#" class="link">Populars</a></li>
+          <li><a href="#" class="link">Restaurants</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>
+          Discover Aarhus' hidden <br />
+          Italian treasures
+        </h1>
+        <p>With our carefully selected restaurants</p>
+        <button class="cta-button">Explore now</button>
+      </div>
+    </section>
+
+    <!-- Cards Section -->
+    <section class="cards-section">
+      <h2 class="section-title">User's favourites</h2>
+      <h4 class="section-sub-title">Selected by our users</h4>
+      <div class="cards-container">
+        <!-- Card 1 -->
+        <div class="card">
+          <img
+            src="./Images/banner-nonna-1.webp"
+            alt="Italian Restaurant 1"
+            class="card-image"
+          />
+          <div class="card-content">
+            <div class="card-header">
+              <h3 class="card-title">Nonna Velide</h3>
+              <div class="card-rating">
+                <span>★</span>
+                <span>5.0</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="card-location">
+                <i class="location-icon"></i>
+                <span>Mårslet</span>
+              </div>
+              <button class="heart-btn">
+                <i class="heart-icon"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+          <img
+            src="./Images/banner-piccolo-4.webp"
+            alt="Italian Restaurant 2"
+            class="card-image"
+          />
+          <div class="card-content">
+            <div class="card-header">
+              <h3 class="card-title">Piccolo</h3>
+              <div class="card-rating">
+                <span>★</span>
+                <span>4.8</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="card-location">
+                <i class="location-icon"></i>
+                <span>Mårslet</span>
+              </div>
+              <button class="heart-btn">
+                <i class="heart-icon"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+          <img
+            src="./Images/Luna-Rossa.webp"
+            alt="Italian Restaurant 3"
+            class="card-image"
+          />
+          <div class="card-content">
+            <div class="card-header">
+              <h3 class="card-title">Luna Rossa</h3>
+              <div class="card-rating">
+                <span>★</span>
+                <span>4.5</span>
+              </div>
+            </div>
+            <div class="card-footer">
+              <div class="card-location">
+                <i class="location-icon"></i>
+                <span>Mårslet</span>
+              </div>
+              <button class="heart-btn">
+                <i class="heart-icon"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="burger-menu.js"></script>
+  </body>
+</html>
