@@ -15,4 +15,9 @@ heartButtons.forEach((button) => {
   });
 });
 
+// Map
+document.querySelector("iframe").addEventListener("click", () => {
+  console.log("Map clicked!");
+});
+
 //----------------------------------//

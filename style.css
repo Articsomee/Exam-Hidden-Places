@@ -318,6 +318,29 @@ header {
   background-image: url("Images/heart-filled.webp");
 }
 
+/* Map style */
+.map-section {
+  text-align: center;
+  background-color: #000; /* Matches the dark map theme */
+  color: #fff; /* White text for contrast */
+  padding: 20px 0;
+}
+
+.map-section h1 {
+  font-family: "Arial", sans-serif;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+/* Responsive iframe for better adaptability */
+iframe {
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow effect */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .cards-container {
