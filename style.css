@@ -97,7 +97,7 @@ header {
 }
 
 #nav-links li a:hover {
-  color: #f28c38; /* Highlight color */
+  color: #d4711f; /* Highlight color */
 }
 
 /* Burger Menu Specific */
@@ -165,7 +165,7 @@ header {
 }
 
 .cta-button {
-  background-color: #f28c38;
+  background-color: #d4711f;
   color: #000;
   border: none;
   border-radius: 5px;
@@ -177,7 +177,7 @@ header {
 }
 
 .cta-button:hover {
-  background-color: #d9772c;
+  background-color: #d4711f;
 }
 
 /* Responsive Design */
@@ -207,7 +207,7 @@ header {
 .section-sub-title {
   font-family: "gg-sans-SemiBold", sans-serif;
   font-size: 16px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 /* Container for Horizontal Scrolling */
@@ -268,7 +268,7 @@ header {
 
 .card-rating {
   font-size: 1.1rem;
-  color: #f28c38; /* Star color */
+  color: #d4711f; /* Star color */
   display: flex;
   align-items: center;
   gap: 5px;
@@ -333,7 +333,7 @@ header {
   font-size: 26px;
   padding-left: 40px;
   padding-right: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 /* Responsive iframe of the map for better adaptability */
