@@ -346,6 +346,146 @@ header {
   border: none;
 }
 
+/* Popular cards Section */
+.popular-section {
+  padding: 20px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+}
+
+.section-title {
+  font-family: "Flame", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.category-nav {
+  margin-bottom: 20px;
+}
+
+.category-link {
+  font-family: "gg-sans-SemiBold", sans-serif;
+  font-size: 1rem;
+  color: #d4711f;
+  text-decoration: none;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.category-link.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.card-container {
+  display: grid;
+  gap: 20px;
+  max-width: 500px;
+  height: 522px;
+  align-content: center;
+  margin: 0 auto;
+}
+.food-card {
+  background-color: #fff;
+  color: #000;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; /* To align the content in the middle */
+  padding: 10px;
+  overflow: visible; /* Prevent clipping */
+}
+
+.food-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.food-info {
+  flex: 1;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column; /* Align content vertically */
+  justify-content: center; /* Center vertically */
+  align-items: start;
+}
+
+.food-title {
+  font-family: "Flame", sans-serif;
+  font-size: 1.25rem;
+}
+
+.food-details {
+  font-family: "gg-sans-SemiBold", sans-serif;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+.food-rating {
+  font-family: "gg-sans-SemiBold", sans-serif;
+  font-size: 0.875rem;
+}
+
+.o-heart-btn {
+  background: none;
+  display: flex;
+  margin: 0px;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.o-heart-icon {
+  display: inline-block;
+  align-items: center;
+  cursor: pointer;
+  width: 27px;
+  height: 24px;
+  background-image: url("Images/Orange-heart-outline.webp");
+  background-size: cover;
+  transition: background-image 0.3s ease;
+}
+
+.o-heart-btn.liked .o-heart-icon {
+  background-image: url("Images/Orange-heart-clicked.webp");
+}
+
+.see-all-link {
+  display: block;
+  margin-top: 20px;
+  font-family: "gg-sans-SemiBold", sans-serif;
+  color: #d4711f;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.see-all-link:hover {
+  text-decoration: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 750px) {
+  .card-container {
+    display: grid;
+    min-width: 100%;
+    gap: 20px;
+    height: 522px;
+    align-content: center;
+    justify-self: center;
+    margin: 0 auto;
+  }
+
+  .food-card {
+    padding: 10px;
+  }
+}
 /* Responsive Design */
 @media (max-width: 853px) {
   .cards-container {
