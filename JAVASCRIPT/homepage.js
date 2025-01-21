@@ -15,6 +15,14 @@ heartButtons.forEach((button) => {
   });
 });
 
+const EventheartButtons = document.querySelectorAll(".event-heart-btn");
+
+EventheartButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    button.classList.toggle("liked"); // For the events page
+  });
+});
+
 // Map
 document.querySelector("iframe").addEventListener("click", () => {
   console.log("Map clicked!");
