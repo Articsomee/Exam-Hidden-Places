@@ -38,7 +38,6 @@ OrangeHeartButtons.forEach((button) => {
 });
 
 //Cards switch
-
 document.addEventListener("DOMContentLoaded", () => {
   const categoryLinks = document.querySelectorAll(".category-link");
   const foodCards = document.querySelectorAll(".food-card");
