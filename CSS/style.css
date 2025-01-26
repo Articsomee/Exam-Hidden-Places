@@ -22,7 +22,7 @@
 body {
   font-family: "Flame", sans-serif;
   color: #ffffff;
-  background-color: #000000;
+  background-color: #111;
   line-height: 1.2;
 }
 
@@ -231,6 +231,7 @@ header {
   overflow-x: auto; /* horizontal scroll for smaller screens */
   gap: 30px;
   padding: 10px; /* adds padding around the container */
+  scrollbar-color: #4b4b4b #111;
 }
 
 .cards-container::-webkit-scrollbar {
@@ -519,6 +520,7 @@ header {
   justify-content: space-between;
   padding-bottom: 20px;
 }
+
 .see-all-link-events {
   display: inline-block;
   vertical-align: middle;
@@ -540,18 +542,23 @@ header {
 
 .event-cards-container {
   display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
   gap: 25px;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding-bottom: 10px;
+  scrollbar-color: #4b4b4b #111;
 }
 
 .event-card {
-  position: relative; /* pake card a positioning context */
+  position: relative;
   border-radius: 10px;
   overflow: hidden;
-  min-width: 350px;
+  min-width: 450px;
+  max-width: 600px;
   scroll-snap-align: start;
+  z-index: 1;
 }
 
 .event-cards-content {
