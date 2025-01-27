@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Flame";
-  src: url("./Fonts/FlameRegular.OTF") format("opentype");
+  src: url("./Fonts/FlameRegular.woff2") format("opentype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "gg-sans-SemiBold";
-  src: url("./Fonts/gg-sans-SemiBold.ttf") format("truetype");
+  src: url("./Fonts/gg-sans-Semibold.woff2") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
