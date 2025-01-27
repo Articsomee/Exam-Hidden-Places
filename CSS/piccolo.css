@@ -1,6 +1,7 @@
 @font-face {
   font-family: "Flame";
   src: url("./Fonts/FlameRegular.woff2") format("woff2");
+  src: url("./Fonts/FlameRegular.woff") format("woff");
   font-style: normal;
   font-weight: normal;
 }
@@ -8,6 +9,7 @@
 @font-face {
   font-family: "gg-sans-SemiBold";
   src: url("./Fonts/gg-sans-Semibold.woff2") format("woff2");
+  src: url("./Fonts/gg-sans-Semibold.woff") format("woff");
   font-style: normal;
   font-weight: normal;
 }
