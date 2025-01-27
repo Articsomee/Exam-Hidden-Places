@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Flame";
-  src: url("./Fonts/FlameRegular.woff2") format("opentype");
+  src: url("./Fonts/FlameRegular.woff2") format("truetype");
   font-style: normal;
   font-weight: normal;
 }
