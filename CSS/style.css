@@ -290,7 +290,7 @@ header {
 
 .card-rating {
   font-size: 16px;
-  font-family: "gg-sans-SemiBold", sans-serif;
+  font-family: sans-serif;
   font-weight: bold;
   color: #d4711f; /* star color */
   display: flex;
@@ -305,8 +305,8 @@ header {
 }
 
 .card-location {
-  font-family: "gg-sans-SemiBold", sans-serif;
-  font-size: 22px;
+  font-family: sans-serif;
+  font-size: 18px;
   color: #ffffff;
   display: flex;
   align-items: center;
@@ -594,7 +594,7 @@ header {
 }
 
 .event-card-location {
-  font-family: "gg-sans-SemiBold", sans-serif;
+  font-family: sans-serif;
   font-size: 20px;
 }
 
@@ -686,8 +686,8 @@ header {
 }
 
 .footer-sub-heading {
-  font-family: "gg-sans-SemiBold", sans-serif;
-  font-size: 20px;
+  font-family: sans-serif;
+  font-size: 18px;
   font-weight: 500;
   text-decoration: none;
   color: white;
