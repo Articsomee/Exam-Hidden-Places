@@ -202,29 +202,6 @@
 }
 
 /* Mobile Responsiveness */
-@media (max-width: 768px) {
-  .carousel {
-    height: 250px;
-    max-width: 100%;
-    margin-bottom: 15px;
-  }
-
-  .carousel-slide img {
-    object-fit: cover;
-    height: 35%;
-  }
-
-  .carousel-nav {
-    bottom: 10px;
-  }
-
-  .carousel-dot {
-    width: 10px;
-    height: 10px;
-  }
-}
-
-/* Mobile Responsiveness */
 @media (max-width: 930px) {
   .restaurant-hero {
     flex-direction: column;
@@ -269,5 +246,27 @@
 
   .restaurant-map {
     height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel {
+    height: 250px;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .carousel-slide img {
+    object-fit: cover;
+    height: 35%;
+  }
+
+  .carousel-nav {
+    bottom: 10px;
+  }
+
+  .carousel-dot {
+    width: 10px;
+    height: 10px;
   }
 }
