@@ -640,6 +640,11 @@ header {
   .see-all-link-events {
     display: none;
   }
+
+  .event-card {
+    min-width: 335px;
+    height: 350px;
+  }
 }
 
 /* ------ Footer ------ */
@@ -839,7 +844,7 @@ header {
 /* Responsive Design */
 @media (max-width: 853px) {
   .cards-container {
-    justify-content: start;
+    justify-content: start; /* the cards start at the left of the page */
     gap: 25px; /* Reduce spacing for smaller screens */
   }
 
