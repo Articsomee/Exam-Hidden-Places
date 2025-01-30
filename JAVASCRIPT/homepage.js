@@ -32,7 +32,7 @@ OrangeHeartButtons.forEach((button) => {
   });
 });
 
-//Cards switch
+//Cards switch based on gategory
 document.addEventListener("DOMContentLoaded", () => {
   const categoryLinks = document.querySelectorAll(".category-link");
   const foodCards = document.querySelectorAll(".food-card");
@@ -41,13 +41,13 @@ document.addEventListener("DOMContentLoaded", () => {
     link.addEventListener("click", (event) => {
       event.preventDefault();
 
-      // Remove 'active' class from all category links
+      // To remove 'active' class from all category links
       categoryLinks.forEach((link) => link.classList.remove("active"));
 
-      // Add 'active' class to the clicked link
+      // To add 'active' class to the clicked link
       link.classList.add("active");
 
-      // Get the selected category
+      // To get the selected category
       const selectedCategory = link.getAttribute("data-category");
 
       // Show/hide cards based on the selected category
