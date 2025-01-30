@@ -23,11 +23,6 @@ EventheartButtons.forEach((button) => {
   });
 });
 
-// Map
-document.querySelector("iframe").addEventListener("click", () => {
-  console.log("Map clicked!");
-});
-
 //Like functionality for the orange hearts
 const OrangeHeartButtons = document.querySelectorAll(".o-heart-btn");
 
