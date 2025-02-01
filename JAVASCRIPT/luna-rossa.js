@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
       dot.classList.add("carousel-dot");
       dot.dataset.index = index;
       if (index === 0) dot.classList.add("active");
-      dot.addEventListener("click", () => moveToSlide(index + 1)); // +1 for clone offset
+      dot.addEventListener("click", () => moveToSlide(index + 1));
       dotsContainer.appendChild(dot);
     });
   }
@@ -52,7 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
   function handleTransitionEnd() {
     isTransitioning = false;
 
-    // Seamlessly jump to clone's counterpart
     if (currentSlideIndex === allSlides.length - 1) {
       track.style.transition = "none";
       currentSlideIndex = 1;
@@ -62,6 +61,11 @@ document.addEventListener("DOMContentLoaded", () => {
       currentSlideIndex = allSlides.length - 2;
       updateSlidePosition();
     }
+
+    // Re-enable transition after the jump
+    setTimeout(() => {
+      track.style.transition = "transform 0.5s ease-in-out";
+    }, 0);
   }
 
   function startAutoSlide() {

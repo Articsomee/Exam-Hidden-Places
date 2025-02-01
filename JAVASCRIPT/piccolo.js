@@ -1,4 +1,3 @@
-// Carousel
 document.addEventListener("DOMContentLoaded", () => {
   const track = document.querySelector(".carousel-track");
   const slides = Array.from(track.children);
@@ -11,18 +10,17 @@ document.addEventListener("DOMContentLoaded", () => {
   track.insertBefore(lastClone, slides[0]);
 
   const allSlides = Array.from(track.children);
-  let currentSlideIndex = 1; // Start at first slide
+  let currentSlideIndex = 1; // Start at first real slide
   let autoSlideInterval;
   let isTransitioning = false;
 
-  // Create dots only for the number of pictures present in the html (not their clones for infninite scrolling)
+  // Create dots only for original slides
   function createDots() {
     slides.forEach((_, index) => {
       const dot = document.createElement("div");
-      dot.classList.add("carousel-dot"); //For dots styling in CSS
+      dot.classList.add("carousel-dot");
       dot.dataset.index = index;
       if (index === 0) dot.classList.add("active");
-      // Move to the image when clicking the button
       dot.addEventListener("click", () => moveToSlide(index + 1));
       dotsContainer.appendChild(dot);
     });
@@ -54,7 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
   function handleTransitionEnd() {
     isTransitioning = false;
 
-    // Seamlessly jump to clone's counterpart
     if (currentSlideIndex === allSlides.length - 1) {
       track.style.transition = "none";
       currentSlideIndex = 1;
@@ -64,6 +61,11 @@ document.addEventListener("DOMContentLoaded", () => {
       currentSlideIndex = allSlides.length - 2;
       updateSlidePosition();
     }
+
+    // Re-enable transition after the jump
+    setTimeout(() => {
+      track.style.transition = "transform 0.5s ease-in-out";
+    }, 0);
   }
 
   function startAutoSlide() {
