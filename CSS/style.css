@@ -734,6 +734,11 @@ header {
   font-family: sans-serif;
   font-size: 18px;
   font-weight: normal;
+  a {
+    cursor: default;
+    color: white;
+    text-decoration: none;
+  }
 }
 
 .footer-form {
