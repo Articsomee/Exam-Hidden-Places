@@ -846,6 +846,11 @@ header {
     padding: 10px;
   }
 }
+@media (max-width: 400px) {
+  .location-fav-name {
+    font-size: smaller;
+  }
+}
 /* Responsive Design */
 @media (max-width: 853px) {
   .cards-container {
