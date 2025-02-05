@@ -141,7 +141,7 @@ header {
 .hero {
   position: relative;
   height: 500px;
-  background: url("/Images/banner-pizza-homepage_.webp") no-repeat center
+  background: url("../Images/banner-pizza-homepage_.webp") no-repeat center
     center/cover;
   display: flex;
   align-items: center;
