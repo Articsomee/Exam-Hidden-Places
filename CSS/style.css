@@ -335,13 +335,13 @@ header {
   display: inline-block;
   width: 27px;
   height: 24px;
-  background-image: url("/Images/heart-outline.webp");
+  background-image: url("../Images/heart-outline.webp");
   background-size: cover;
   transition: background-image 0.3s ease;
 }
 
 .heart-btn.liked .heart-icon {
-  background-image: url("/Images/heart-filled.webp");
+  background-image: url("../Images/heart-filled.webp");
 }
 
 /* map style */
@@ -451,7 +451,7 @@ header {
   display: inline-block;
   width: 17px;
   height: 17px;
-  background-image: url("/Images/fork&knife-icon.webp");
+  background-image: url("../Images/fork&knife-icon.webp");
   background-size: contain;
   align-items: center;
   margin-right: 5px;
@@ -493,13 +493,13 @@ header {
   cursor: pointer;
   width: 27px;
   height: 24px;
-  background-image: url("/Images/Orange-heart-outline.webp");
+  background-image: url("../Images/Orange-heart-outline.webp");
   background-size: cover;
   transition: background-image 0.3s ease;
 }
 
 .o-heart-btn.liked .o-heart-icon {
-  background-image: url("/Images/Orange-heart-clicked.webp");
+  background-image: url("../Images/Orange-heart-clicked.webp");
 }
 /* see all link but it doesn't link to anything because I didn't code all the pages */
 
@@ -624,7 +624,7 @@ header {
 }
 
 .event-heart-icon {
-  background-image: url("/Images/heart-outline.webp");
+  background-image: url("../Images/heart-outline.webp");
   background-size: cover;
   background-position: center;
   width: 31px;
@@ -633,7 +633,7 @@ header {
 }
 
 .event-heart-btn.liked .event-heart-icon {
-  background-image: url("/Images/heart-filled.webp");
+  background-image: url("../Images/heart-filled.webp");
 }
 
 @media (max-width: 600px) {
