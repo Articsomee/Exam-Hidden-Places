@@ -107,7 +107,7 @@
   display: inline-block;
   width: 16px;
   height: 20px;
-  background-image: url("/Images/Location-icon.webp");
+  background-image: url("../Images/Location-icon.webp");
   background-size: contain;
 }
 
